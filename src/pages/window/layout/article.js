@@ -1,36 +1,3 @@
-# layout-dynamic-ui demo
-## 使用过对 `layout-dynamic-ui`进行开发的PC后台管理系统
-## 主要存在3类页面
-### 1.后台管理系统首页
-> 通过使用`ld-frame`组件，进行后台管理框架页面的设计
-### 2.app 系统主要配置和请求逻辑处理页面
-### 3.模板页面
-#### 模板页面分为展示页面和编辑页面
-> 通过创建一套 模板页面，之后通过配置相关的js文件，即可实现页面相同逻辑不同的功能
-
-* 1.展示页面
-
-![展示页面](./result-image/1.png)
-
-* 2.通用模板展示效果
-
-![展示页面](./result-image/2.png)
-![展示页面](./result-image/3.png)
-
-* 3.通用模板展示页代码
-
-![展示页面](./result-image/4.png)
-
-* 4.通用模板编辑页代码
-
-![展示页面](./result-image/5.png)
-
-* 5.通用模板 配置js
-![展示页面](./result-image/6.png)
-
-每一个js代表一个功能页面的增删改
-其中第一个 js代码如下
-```javascript 
 import ld from 'layout-dynamic-ui'
 window.getDateTime= ld.util.getDateTime;
 const layout= {
@@ -163,5 +130,3 @@ const layout= {
 	},
 }
 export default layout;
-
-```
